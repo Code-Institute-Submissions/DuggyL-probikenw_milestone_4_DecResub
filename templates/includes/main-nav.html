@@ -17,11 +17,11 @@
                 Motorcycle Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Jackets</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Gloves</a>
-                <a href="" class="dropdown-item">Boots</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=Jackets" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=Jeans" class="dropdown-item">Jeans</a>
+                <a href="{% url 'products' %}?category=Gloves" class="dropdown-item">Gloves</a>
+                <a href="{% url 'products' %}?category=Boots" class="dropdown-item">Boots</a>
+                <a href="{% url 'products' %}?category=Jackets,Jeans,Gloves,Boots" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -30,9 +30,9 @@
                 Motorcycle Helmets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="helmet-link">
-                <a href="" class="dropdown-item">Full Face Helmets</a>
-                <a href="" class="dropdown-item">Open Face Helmets</a>
-                <a href="" class="dropdown-item">Browse All Helmets</a>
+                <a href="{% url 'products' %}?category=Full Face Helmets" class="dropdown-item">Full Face Helmets</a>
+                <a href="{% url 'products' %}?category=Open Face Helmets" class="dropdown-item">Open Face Helmets</a>
+                <a href="{% url 'products' %}?category=Full Face Helmets,Open Face Helmets" class="dropdown-item">Browse All Helmets</a>
             </div>
         </li>
 
