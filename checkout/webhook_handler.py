@@ -26,8 +26,11 @@ class StripeWH_Handler:
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
 
         send_mail(
-            subject, body, settings.DEFAULT_FROM_EMAIL, 
-            [cust_email])
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        ) 
 
     def handle_event(self, event):
         """Handle unexpected/unknown event"""
