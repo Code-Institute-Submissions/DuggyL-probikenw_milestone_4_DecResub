@@ -1,0 +1,21 @@
+Hello {{ order.full_name }}!
+
+Thank you for your order!
+
+This is your purchase order:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be delivery to {{ order.street_address1 }}, {{ order.street_address2 }}, {{ order.town_or_city }}, {{ order.county }}, {{ order.postcode }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }} or talk to one of our lovely staff on {{ contact_phone }}.
+
+Kind regard and ride safe,
+
+Sir Davos "YOLO" McRidehart IV CEO
+Probike North Wales
