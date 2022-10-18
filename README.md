@@ -1,108 +1,81 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Dustin Li,
+# FAO Code Institute
+I want to apology for hand in uncompleted project. At the late stage of the project, I came across several problems during deployment using Heroku and AWS. My problems are exporting models/datas jsons to Heroku postgres and hosting project’s static files on AWS server. Due to time restraint, I couldn't find a solution in time to fix these problems.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<h1><b>Probike North Wales</b></h1>
+This is a Full Stack Frameworks (Django) project for Code Institute to demonstrate what I have  learned throughout the course so far. I chose to develop an ecommerce shopping website for the local Motorcycle Training School base in North Wales (Deeside). 
+The idea of the project is that Probike rents equipment to students during training and consistently asks by students what equipment they should buy for riding. After seeing an influx of new riders around the country especially in North Wales, the owner of Probike saw an opportunity to branch out from motorcycling training and offer to sell motorcycle apparel directly to students or anyone looking to buy motorcycling gears.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+An online ecommerce (B2C) business specialising in motorcycling gears including helmets, clothes and maybe more in the future. Upon entering the website, from browsing products to checkout, the owner wants a website to offer a smooth and easy online shopping experience. The website also handled customer payment, which dealt with sensitive customer information which required an approach with a security conscious perspective.
 
-## Gitpod Reminders
+There are a number of features due to time constraints that were not possible to implement at this point in time. But I believe I produced an ecommerce application that has met Probike owner requirements with more room to expand in the future. 
+User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# As a shopper, viewing and navigation
+- View a list of products
+- Select some to purchase
+- View individual product details 
+- Identify the price, description product rating, product image and available sizes
+- Easily view the total of my purchases at any time 
+- Keep tap of total cost to avoid spending too much
 
-`python3 -m http.server`
+# As site user, registration and user accounts
+- Easily register for an account 
+- Have a personal account and be able to view my profile
+- Easily login or logout 
+- Access my personal account information 
+- Easily recover my password in case I forgot it 
+- Recover access to my account
+- Received an email confirmation after registering 
+- Verify that my account registration was successful
+- Have a personalised user profile 
+- View my personal order history and order confirmations, and save my payment information
 
-A blue button should appear to click: _Make Public_,
+# As a shopper, sorting and searching
+- Sort the list of available products 
+- Easily identify the best rated, best priced and categorically sorted products
+- Sort a specific category of products 
+- Find the best-priced or best-rated products in a specific category, or sort the products in that category by name
+- Sort multiple categories of products simultaneously 
+- Find the best-priced or best rated products across broad categories, such as “jacket” or “helmet”
+- Search for a product by name or description
+- Find a specific product I’d like to purchase
+- Easily see that I’ve searched for and the number of results
+- Quickly decide whether the product I want is available
 
-Another blue button should appear to click: _Open Browser_.
+# As a shopper, purchasing and checkout
+- Easily select the size and quantity of a product when purchasing it
+- Ensure I don’t accidentally select the wrong product, quantity or size
+- View items in my bag to be purchased
+- Identify the total cost of my purchase and all items I will receive
+- Adjust the quantity of individual items in my bag
+- Easily make changes to my purchase before checkout
+- Easily enter my payment information
+- Check out quickly and with no hassles
+- Feel my personal and payment information is safe and secure
+- Confidently provide the needed information to make a purchase
+- View an order confirmation after checkout
+- Verify that I haven’t made any mistakes
+- Received an email confirmation after checking out
+- Keep the confirmation of what I’ve purchased for my records
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# As store owner, admin and store management
+- Add a product 
+- Add new items to my store
+- Edit/update a product
+- Change product prices, descriptions, images, and other product criteria
+- Delete a product 
+- Remove item that are no longer for sale
 
-A blue button should appear to click: _Make Public_,
+# Design
+Using Code Institute Boutuqe Ado project as baseline, I opted for a simple design, where the products themselves are the focus and there isn’t too many graphics cluttering and detract visitors. 
 
-Another blue button should appear to click: _Open Browser_.
+## Colour Scheme
+- The two main primary colours used are blue, dark grey & white
+- Black text on white background for readability
+- Red colour to draw the visitor eyes on important contents
+- The colours scheme of this project is according to Probike corporate identity guidelines. Any combinations of colours I used throughout the project is to emphasise colour contrast and prioritise readability.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Typography
+I used sans-serif Google Fonts “Montserrat” throughout the webpage to maintain cohesion across the project. Using different font weights (from Thin to Black) to convey emphasis and importance on some of the content. It has high readability and ease of scaling make Montserrat a suitable typeface for web pages. 
