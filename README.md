@@ -141,12 +141,11 @@ cart’ button will place the selected item into the shopping cart.
 - Create a wishlist for customers to add their favourite products. (Maybe email shoppers if their favourited products currently in discount.
 
 ## Testing
-The JSHint Lighthouse, W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no errors in the project.
+W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no errors in the project.
 
-- Found 9 functions with same 2 warnings regarding browser extension. link
-- HTML Validator found 1 error from Materialize jQuery preset. link
-- CSS Validator found 1 error from Materialize css preset. link
-- Python PEP8 online found 2 error regarding expected lines
+- HTML Validator found 2 error. [view](media/probike-project/probike-desktop.png)
+- CSS Validator found no error. [view](media/probike-project/probike-desktop.png)
+- Python PEP8 online found 2 error regarding expected lines. [view](media/probike-project/probike-desktop.png)
 
 ### Manual Testing
 
