@@ -17,8 +17,8 @@ class OrderAdmin(admin.ModelAdmin):
 
     fields = ('order_number', 'user_profile', 'date', 'full_name',
               'phone_number', 'email',  'country',
-              'street_address1', 'street_address2',
-              'town_or_city', 'county', 'postcode',
+              'street_address1', 'street_address2', 
+              'town_or_city', 'county', 'postcode', 
               'delivery_cost', 'order_total', 'grand_total',
               'original_bag', 'stripe_pid')
 
@@ -27,6 +27,5 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total',)
 
     ordering = ('-date',)
-
 
 admin.site.register(Order, OrderAdmin)

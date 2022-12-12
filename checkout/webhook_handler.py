@@ -9,7 +9,6 @@ from profiles.models import UserProfile
 import json
 import time
 
-
 class StripeWH_Handler:
     """Handle Stripe Webhooks"""
 
@@ -31,7 +30,7 @@ class StripeWH_Handler:
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )
+        ) 
 
     def handle_event(self, event):
         """Handle unexpected/unknown event"""
