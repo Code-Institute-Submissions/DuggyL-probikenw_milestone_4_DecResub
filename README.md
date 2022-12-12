@@ -9,7 +9,7 @@ To enable you to test the website functionality, a number of demo accounts, prod
 | Email | Password | Desription |
 | ----- | -------- | ---------- |
 | admin | mile5tone4 | Admin account with create and update permissions to all custom models. |
-| customer | mile5tone4 | Testing Customer account. |
+| customer | mile5tone4 | Customer account for testing. |
 
 # Design Brief
 This is a Full Stack Frameworks (Django) project for Code Institute to demonstrate what I have learned throughout the course so far. I chose to develop an ecommerce shopping website for the local Motorcycle Training School base in North Wales (Deeside). 
@@ -117,42 +117,37 @@ The JSHint Lighthouse, W3C Markup Validator and W3C CSS Validator Services were 
 |---|------|--------|------|
 | 1 | Click logo in Navbar | Take user to homepage | YES |
 | 2 | Click ‘Login’ (when not logged in) in Navbar | Take user to login section | YES |
-| 3 | Click ‘Username’ (when logged in) in Navbar | Dropdown showing profile and logout options | YES |
-| 4 | Click ‘Profile’ (when logged in) in Navbar | User taken to profile section | YES |
-| 5 | Click ‘Logout’ (when logged in) in Navbar | User logged out | YES |
-| 6 | Click ‘Explore’ in Navbar (normal user) | Dropdown showing categories of products | YES
-| 7 | Click ‘Explore’ in Navbar (superuser) | Dropdown showing categories of products and product management section | YES |
-| 8 | Click cart icon in Navbar (when logged in and no items have been added to cart) | Users receive alert ‘No items in your cart’ | YES |
-| 9 | Click cart icon in Navbar (when logged in and there is items added to cart) | Users are directed to cart page where they can view their order | YES | 
+| 3 | Click ‘Account’ (when logged in) in Navbar | Dropdown showing profile, logout options and product management (supersuer) | YES |
+| 4 | Click ‘Product Management’ in Navbar (superuser) | User taken to product mManagement page | YES |
+| 5 | Click ‘My Profile’ (when logged in) in Navbar | User taken to profile page | YES |
+| 6 | Click ‘Logout’ (when logged in) in Navbar | User logged out | YES |
+| 7 | Click ‘All Products’ in Navbar (normal user) | Dropdown showing categories of products | YES
+| 8 | Click shopping bag icon in Navbar (when logged in and no items have been added to bag) | Users receive alert ‘No items in your bag’ | YES |
+| 9 | Click shopping bag icon in Navbar (when logged in and there is items added to bag) | Users are directed to bag page where they can view their order | YES | 
 | 10 | Click inside search bar in Navbar | Allows user to type and search | YES |
-| 11 | Click ‘Bikes’ category image on homepage | Take user to bikes category | YES |
-| 12 | Click ‘Parts’ category image on homepage | Take user to parts category | YES |
-| 13 | Click ‘Clothing’ category image on homepage | Take user to clothing category | YES |
-| 14 | Clicking on any product | Directs user to correct product page | YES |
-| 15 | Clicking ‘Add to cart’ button | Adds 1 relevant item to the users cart | YES 
-| 16 | Clicking ‘Add to cart’ button | Users receives alert ‘Item added to cart’ | YES |
-| 17 | Clicking ‘Add to cart’ button when item is already in cart | Users receives alert ‘The number of items have been updated’ | YES
-| 18 | Clicking ‘Add to cart’ button when not logged in | User is directed to the login page | YES |
-| 19 | Clicking ‘Change password’ link in profile page | Users are directed to password-change page | YES |
-| 20 | Clicking ‘Choose file’ button in profile page | Prompts users to select a file to update avatar | YES |
-| 21 | Clicking ‘Save changes’ button in profile page | Saves any updates to profile page | YES |
-| 22 | Clicking 'Save changes' button in profile page | Users receive alert ‘Your profile has been updated successfully!’ | YES |
-| 23 | Clicking ‘Reset’ button in profile page | Removes data in Full Name and Address fields | YES |
-| 24 | Clicking ‘+’ button in cart page | Item within cart is increased by 1 | YES |
-| 25 | Clicking ‘+’ button in cart page | Users receive alert ‘{item.name} added’ | YES | 
-| 26 | Clicking ‘-’ button in cart page when multiple items are in cart | Item within cart is decreased by 1 | YES |
-| 27 | Clicking ‘-’ button in cart page when multiple items are in cart | Users receive alert ‘{item.name} removed’ | YES |
-| 28 | Clicking ‘-’ button in cart page when there is only 1 item in the cart | Users are directed to homepage and receive alert ‘No items in your cart’ | YES | 
-| 29 | Clicking ‘Remove from cart’ button in cart page | The selected item is removed from the user cart | YES |
-| 30 | Clicking ‘Remove from cart’ button in cart page | Users receive alert ‘Item removed from cart’ | YES |
-| 31 | Clicking ‘Continue Shopping’ button in cart page | Users directed to homepage | YES |
-| 32 | Clicking ‘Checkout’ button in cart page | Users directed to checkout page | YES |
-| 33 | Clicking ‘Update Information’ button in checkout page | ‘Proceed to Checkout’ button becomes available to press | YES |
-| 34 | Clicking ‘Update Information’ button in ‘Profile’ page | Users receive alert ‘Success! Your profile updated successfully’ | YES | 
-| 35 | Clicking ‘Complete Order’ button in checkout page(when not complete) | Users receive alert ‘Please fill in this field’ | YES |
-| 36 | Clicking ‘Complete Order’ button in checkout page | Only works if address fields have been completed | YES |
-| 37 | Clicking ‘Secured Checkout’ button in checkout page | Directs user to payment page | YES | 
-| 38 | Entering stripe test card payment details with valid email address and click on ‘Complete Order’ button | Order processes successfully and user directed user order confirmation page | YES | 
+| 11 | Click ‘Motocyle Clothing’ category link on homepage | Dropdown showing motocyle clothing sub-categories | YES |
+| 12 | Click ‘Motocyle Helmets’ category link on homepage | Dropdown showing motocyle helmets sub-categories | YES |
+| 13 | Click on any sub-category link on homepage | Directs user to selected sub-categories page | YES |
+| 14 | Clicking on any product | Directs user to correct product information page | YES |
+| 15 | Clicking ‘Add to bag’ button | Adds 1 relevant item to the users bag | YES 
+| 16 | Clicking ‘Add to bag’ button | Users receives alert ‘Item added to bag | YES |
+| 17 | Clicking ‘Add to bag’ button when item is already in bag | Users receives alert ‘The number of items have been updated’ | YES
+| 18 | Clicking ‘Save changes’ button in profile page | Saves any updates to profile page | YES |
+| 19 | Clicking 'Save changes' button in profile page | Users receive alert ‘Your profile has been updated successfully!’ | YES |
+| 20 | Clicking ‘+’ button in bag page on selected product | Item within bag is increased by 1 | YES |
+| 21 | Clicking ‘-’ button in bag page on selected product | Item within bag is decreased by 1 | YES |
+| 22 | Clicking ‘Update’ below quantity number field in bag page | Users receive alert confirmation ‘{item.name} quantity updated’ | YES | 
+| 23 | Clicking ‘Remove’ below quantity number field in bag page | Users receive alert ‘{item.name} removed’ | YES |
+| 24 | Clicking ‘Remove from bag’ button in bag page | The selected item is removed from the user bag | YES |
+| 25 | Clicking ‘Remove from bag’ button in bag page | Users receive alert ‘Item removed from bag’ | YES |
+| 26 | Clicking ‘Continue Shopping’ button in bag page | Users directed to homepage | YES | 
+| 27 | Clicking ‘Checkout’ button in bag page | Users directed to checkout page | YES |
+| 28 | Clicking ‘Update Information’ button in checkout page | ‘Proceed to Checkout’ button becomes available to press | YES |
+| 29 | Clicking ‘Update Information’ button in ‘Profile’ page | Users receive alert ‘Success! Your profile updated successfully’ | YES | 
+| 30 | Clicking ‘Complete Order’ button in checkout page(when not complete) | Users receive alert ‘Please fill in this field’ | YES |
+| 31 | Clicking ‘Complete Order’ button in checkout page | Only works if address fields have been completed | YES |
+| 32 | Clicking ‘Secured Checkout’ button in checkout page | Directs user to payment page | YES | 
+| 33 | Entering stripe test card payment details with valid email address and click on ‘Complete Order’ button | Order processes successfully and user directed user order confirmation page | YES | 
 
 ## Mobile / Tablet Devices:
 The website was tested for responsiveness using Google/Firefox Chrome Developer Tools.
