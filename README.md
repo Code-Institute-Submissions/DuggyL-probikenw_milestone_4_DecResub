@@ -59,7 +59,7 @@ The colours scheme of this project is according to Probike corporate identity gu
 I used sans-serif Google Fonts “Montserrat” throughout the webpage to maintain cohesion across the project. Using different font weights (from Thin to Black) to convey emphasis and importance on some of the content. It has high readability and ease of scaling make Montserrat a suitable typeface for web pages. 
 
 ## Database model and wireframe
-- Database diagram [view](https://probike-nw.herokuapp.com/)
+- Database diagram (rough draft) [view](https://drawsql.app/teams/dustin/diagrams/probike-nw/embed)
 - Homepage wireframe [view](media/probike-project/probike-desktop.png)
 - Mobile wireframe [view](media/probike-project/probike-mobile.png)
 
