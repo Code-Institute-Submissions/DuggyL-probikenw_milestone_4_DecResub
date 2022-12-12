@@ -68,16 +68,19 @@ I used sans-serif Google Fonts “Montserrat” throughout the webpage to mainta
 ## Homepage
 - The homepage greets visitors with a big hero image of a motorcycle racer, an idea to draw attention as soon as they open the site. The homepage is deliberately kept simple and communicates with visitors directly using a single image letting visitors know what this website is about. A big button to invite shoppers and see what the store has to offer.
 
+<img src=media/probike-project/clothings.png>
+
 ## Navigation Bar
 - The Navigation bar at the top of all pages maintains a consistent look across the website. It contains links to homepage, login, profile, search bar, and shopping basket if the shoppers are already logged in. 
 
-<img src=media/probike-project/clothings.png>
-
 ## Product / Product Details Page
 - The categories of products are bold and obvious, for the shopper ease of navigation to browse products of their choice. In order to make the products take centre stage, I chose to display the product as big as possible on all screen sizes. The name of the products are big and easy to read, right below the name, all the information the shoppers need at first glance. By clicking on the products images, will lead to the product details page for more information about products.
-- The options to select size and quantity will not appear if selected product run out of stock. The product page details page will inform the shopper of how many the store currently have in stock, if the stock is 0 it will say  “out of stock”. The ‘add to cart’ button will place the selected item into the shopping cart. 
+cart’ button will place the selected item into the shopping cart. 
 
 <img src=media/probike-project/helmets.png>
+
+- The options to select size and quantity will not appear if selected product run out of stock. The product page details page will inform the shopper of how many the store currently have in stock, if the stock is 0 it will say  “out of stock”. The ‘add to 
+
 <img src=media/probike-project/product-details.png>
 
 ## Login Page
@@ -88,29 +91,35 @@ I used sans-serif Google Fonts “Montserrat” throughout the webpage to mainta
 <img src=media/probike-project/signin.png>
 <img src=media/probike-project/login-success.png>
 <img src=media/probike-project/logout.png>
+
+- Only available when the user is not logged out and user have forgotten password or wished to changed password.
+
 <img src=media/probike-project/reset-password.png>
 
 ## Profile Page
 - User profile can be clicked from the navbar. This will only be available to visitors who are logged in. The profile page contained visitors' information and ordered history. 
 - Only available to logged in users. Clicking on the username will present the user with two options; Profile and Logout. Profile will direct the user to the user's profile area and Logout will log the user out and direct them to a logout page notifying the user they have been logged out and offer an option to sign in again.
+
+<img src=media/probike-project/my-profile.png>
+
 - Shoppers can view their order history in the Orders History section, and update their personal information.
 
-<img src=media/probike-project/myprofile.png>
-
-## Shopping Cart
-- Only available to logged in users. Clicking the cart will direct the shoppers to the cart page providing there are items in the users cart, otherwise they will receive an alert. The number of items within the user's cart is visible next to the cart icon.
-- Users can view their shopping cart which will list all items they have ‘Added to cart’, including quantity and a total price for all items. User can adjust the quanity of items in their cart or remove completely.
+## Shopping Bag
+- Only available to logged in users. Clicking the nag will direct the shoppers to the bag page providing there are items in the users bag, otherwise they will receive an alert. The number of items within the user's bag is visible next to the bag icon.
 
 <img src=media/probike-project/add-to-shopping-bag.png>
+
+- Users can view their shopping bag which will list all items they have ‘Added to bag’, including quantity and a total price for all items. User can adjust the quanity of items in their bag or remove completely.
+
 <img src=media/probike-project/multiple-products-shopping-bag.png>
 
 ## Checkout
-- In the checkout section, users will fill in their delivery details further checkout sections to be included. A list of items to be purchased is also found beside form as well as an order total. The users inout their address, the address will be saved for future use. User cannot proceed to the payment section until all field of delivery address have been complete.
+- In the checkout section, users will fill in their delivery details further checkout sections to be included. A list of items to be purchased is also found beside form as well as an order total. The users inout their address, the address will be saved for future use. User cannot proceed to the payment section until all field of delivery address have been complete. 
 
 <img src=media/probike-project/checkout.png>
 
 ## User notification
-- Users will receive alerts throughout this site for various actions, including adding items to cart, removing items from cart, updating profile page, saving address, password change etc.
+- Users will receive alerts throughout this site for various actions, including adding items to bag, removing items from bag, updating profile page, saving address, password change etc.
 
 ## Payment
 - User can purchase their items using the Stripe payment platform.
