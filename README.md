@@ -122,7 +122,10 @@ cart’ button will place the selected item into the shopping cart.
 - Users will receive alerts throughout this site for various actions, including adding items to bag, removing items from bag, updating profile page, saving address, password change etc.
 
 ## Payment
-- User can purchase their items using the Stripe payment platform.
+- User can purchase their items using the Stripe payment platform. All payment dealt by Stripe and can be monitor by Stripe developer interface any events and activities including successful/failed purchased, error, will be logged. 
+
+<img src=media/probike-project/stripe-event.png>
+<img src=media/probike-project/stripe-log.png>
 
 ## Payment Success
 - User will be directed to the 'order success' page when they purchase an item.
@@ -218,12 +221,12 @@ The website was tested for responsiveness using Google/Firefox Chrome Developer 
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/DuggyL/probikenw_milestone_4).
 2. At the top of the Repository locate the "Settings".
 3. Click on "Pages" will open "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. At the top near github header to locate the now published site [link](https://duggyl.github.io/chef-dicson-milestone-project-1/).
+6. At the top near github header to locate the now published site [link](https://probike-nw.herokuapp.com/).
 
 ### Forking the GitHub Repository
 
