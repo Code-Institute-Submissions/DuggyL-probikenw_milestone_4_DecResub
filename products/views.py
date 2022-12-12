@@ -9,6 +9,7 @@ from .forms import ProductForm
 
 # Create your views here.
 
+
 def all_products(request):
     """ A view to show all products, and search/sorting queries """
 
@@ -33,7 +34,6 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-                    
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -42,9 +42,10 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Sorry we couldn't find what you're searching for")
+                messages.error(
+                    request, "Sorry we couldn't find what you're searching for"
+                    )
                 return redirect(reversed('products'))
-            
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -86,7 +87,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'You have failed to add a product. Please try again')
+            messages.error(
+                request, 'You have failed to add a product. Please try again'
+                )
     else:
         form = ProductForm()
 
@@ -113,7 +116,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'You have failed to edit a product. Please try again.')
+            messages.error(
+                request, 'You have failed to edit a product. Please try again.'
+                )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
